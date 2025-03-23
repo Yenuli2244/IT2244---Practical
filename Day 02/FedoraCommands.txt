@@ -1,0 +1,37 @@
+1).Create a new txt file.
+touch abc.txt
+
+2).Opens the file in text editor.
+vi abc.txt
+
+3).After we edit the file we should type following command.
+Esc + :wq
+
+4).Displays all files and folders in the current directory.
+ls
+
+5).Displays a detailed list of files and directories.
+ls -ltr
+
+6).Shows regular and hidden files.
+ls -a
+
+7).Counts the number of lines in file.
+wc -l abc.txt
+
+8). Changes the permissions of the file.
+chmod 744 abc.txt
+
+**For the .csv(Comma-Seperated Values)
+
+9)Extracts specific columns from a CSV file.
+cut -d, -f1,3 test.csv
+
+10)Displays the first 2 lines of file.
+head -2 test.csv
+
+11).Displays the last 3 lines of file.
+tail -3 test.csv
+
+12).extracts the first and second columns from test.csv and saves the output into test3.csv.
+cut -d, -f1,2 test.csv > test3.csv
