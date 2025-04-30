@@ -1,0 +1,58 @@
+
+touch - create a file.
+
+[yenuli@DESKTOP-756Q0GF ~]$ touch Names.txt
+
+vi - Open a file
+	Switch to Insert Mode (to start typing):
+		>>Press i (insert) or a (append).
+
+	Save and Exit:
+		>>Press ctrl + c, then type :wq! and press Enter.
+
+[yenuli@DESKTOP-756Q0GF ~]$ vi Names.txt
+
+more - give the data inside the file.
+
+[yeheni@DESKTOP-CF9TBQU ~]$ more cake.txt
+Yenuli
+Kaveesha
+Saduni
+Dinithi
+Sahani
+
+dir - display all the files in the directory.
+dir *.txt - display all the files with .txt extension.
+
+[yenuli@DESKTOP-756Q0GF ~]$ dir *.txt
+Names.txt  abc.txt  name.txt  new.txt
+
+find - search for files and directories.
+find *y* - search for all the directories and files with the character "y"
+
+[yenuli@DESKTOP-756Q0GF ~]$ find *y*
+days.sh
+xyz.csv
+
+chmod(Change Mode) – file permission command.
+444 - file is read only for user, server and admin.
+
+[yenuli@DESKTOP-756Q0GF ~]$ chmod 444 Names.txt
+
+ls -l	Long format (detailed view).
+
+[yenuli@DESKTOP-756Q0GF ~]$ ls -l
+total 72
+-r--r--r-- 1 yenuli yenuli  38 Apr 30 14:01  Names.txt
+
+777 - Anyone(user, server and admin) can read write and execute cake.txt file.
+
+[yenuli@DESKTOP-756Q0GF ~]$ chmod 777 Names.txt
+[yenuli@DESKTOP-756Q0GF ~]$ ls -l
+total 72
+-rwxrwxrwx 1 yenuli yenuli  38 Apr 30 14:01  Names.txt
+
+[yenuli@DESKTOP-756Q0GF ~]$ chmod 547 Names.txt
+[yenuli@DESKTOP-756Q0GF ~]$ ls -l
+total 72
+-r-xr--rwx 1 yenuli yenuli  38 Apr 30 14:01  Names.txt
