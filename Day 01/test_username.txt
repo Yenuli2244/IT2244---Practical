@@ -1,5 +1,9 @@
 @echo off
+:: hides the command execution 
 echo username : %USERNAME%
+:: display the user's username
 echo windows version:
 ver
+:: display the windows version
 pause
+:: pause the command line interface
