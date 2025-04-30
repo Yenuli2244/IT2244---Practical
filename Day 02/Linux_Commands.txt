@@ -1,0 +1,147 @@
+pwd(Print Working Directory) - Shows the full path of the current directory.
+[yenuli@DESKTOP-756Q0GF ~]$ pwd
+/home/yenuli
+
+who - Shows a list of users currently logged into the system.
+[yenuli@DESKTOP-756Q0GF ~]$ who
+
+awk - A text-processing tool used for pattern scanning and data manipulation.
+[yenuli@DESKTOP-756Q0GF ~]$ awk
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+POSIX options:          GNU long options: (standard)
+        -f progfile             --file=progfile
+        -F fs                   --field-separator=fs
+        -v var=val              --assign=var=val
+Short options:          GNU long options: (extensions)
+        -b                      --characters-as-bytes
+        -c                      --traditional
+        -C                      --copyright
+        -d[file]                --dump-variables[=file]
+        -D[file]                --debug[=file]
+        -e 'program-text'       --source='program-text'
+        -E file                 --exec=file
+        -g                      --gen-pot
+        -h                      --help
+        -i includefile          --include=includefile
+        -I                      --trace
+        -k                      --csv
+        -l library              --load=library
+        -L[fatal|invalid|no-ext]        --lint[=fatal|invalid|no-ext]
+        -M                      --bignum
+        -N                      --use-lc-numeric
+        -n                      --non-decimal-data
+        -o[file]                --pretty-print[=file]
+        -O                      --optimize
+        -p[file]                --profile[=file]
+        -P                      --posix
+        -r                      --re-interval
+        -s                      --no-optimize
+        -S                      --sandbox
+        -t                      --lint-old
+        -V                      --version
+
+To report bugs, use the `gawkbug' program.
+For full instructions, see the node `Bugs' in `gawk.info'
+which is section `Reporting Problems and Bugs' in the
+printed version.  This same information may be found at
+https://www.gnu.org/software/gawk/manual/html_node/Bugs.html.
+PLEASE do NOT try to report bugs by posting in comp.lang.awk,
+or by using a web forum such as Stack Overflow.
+
+Source code for gawk may be obtained from
+https://ftp.gnu.org/gnu/gawk/gawk-5.3.0.tar.gz
+
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+
+Examples:
+        awk '{ sum += $1 }; END { print sum }' file
+        awk -F: '{ print $1 }' /etc/passwd
+		
+sed(Stream Editor) - is a powerful command-line tool used for searching, replacing, inserting, 
+and deleting text in files or input streams. It works by processing text line by line, making it useful for automation and scripting.
+[yenuli@DESKTOP-756Q0GF ~]$ sed
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -c, --copy
+                 use copy instead of rename when shuffling files in -i mode
+  -b, --binary
+                 does nothing; for compatibility with WIN32/CYGWIN/MSDOS/EMX
+                 (open files in binary mode; CR+LF are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+ls -ltr - The ls command is used to list files and directories. The -ltr options modify how the output is displayed.
+ls -ltr
+total 72
+-rw-r--r-- 1 yenuli yenuli  39 Mar 20 18:45  new.csv
+-rw-r--r-- 1 yenuli yenuli  28 Mar 20 23:27  new.txt
+-rw-r--r-- 1 yenuli yenuli  45 Mar 23 17:08  test.csv
+-rw-r--r-- 1 yenuli yenuli  30 Mar 23 17:10  test3.csv
+-rwxr--r-- 1 yenuli yenuli  28 Mar 23 17:14  abc.txt
+-rw-r--r-- 1 yenuli yenuli 311 Apr  3 17:36  datafile.csv
+-rw-r--r-- 1 yenuli yenuli  92 Apr  4 07:06  xyz.csv
+-rw-r--r-- 1 yenuli yenuli 159 Apr  5 11:43 '\'
+-rwxrwxrwx 1 yenuli yenuli 274 Apr  6 12:30  student.sh
+-rwxrwxrwx 1 yenuli yenuli 266 Apr  6 12:30  calculator.sh
+-rwxrwxrwx 1 yenuli yenuli 216 Apr  6 12:31  days.sh
+-rwxrwxrwx 1 yenuli yenuli 151 Apr  6 12:32  Username.sh
+-rwxrwxrwx 1 yenuli yenuli 199 Apr  6 12:36  numbers.sh
+-rwxrwxrwx 1 yenuli yenuli 286 Apr  6 12:37  cal1.sh
+-rwxrwxrwx 1 yenuli yenuli 592 Apr 10 20:20  astro.sh
+-rwxrwxrwx 1 yenuli yenuli 588 Apr 10 20:31  patterns.sh
+-rwxrwxrwx 1 yenuli yenuli 291 Apr 28 06:38  Q1.sh
+-rw-r--r-- 1 yenuli yenuli   0 Apr 30 13:58  name.txt
+-r-xr--rwx 1 yenuli yenuli  38 Apr 30 14:01  Names.txt
+
+ls -a - Command used to list all files and directories, including hidden ones (files that start with .).
+[yenuli@DESKTOP-756Q0GF ~]$ ls -a
+ .               .bash_logout    Names.txt    '\'         cal1.sh         days.sh    new.txt       student.sh   xyz.csv
+ ..              .bash_profile   Q1.sh         abc.txt    calculator.sh   name.txt   numbers.sh    test.csv
+ .bash_history   .bashrc         Username.sh   astro.sh   datafile.csv    new.csv    patterns.sh   test3.csv
+
+Other ls Commands:
+
+ls	Lists only visible files.
+ls -l	  Long format (detailed view).
+ls -lh	  Long format with human-readable sizes.
+ls -la	  Long format + show hidden files.
+ls -ltr	  Sorts files by time, oldest first.
