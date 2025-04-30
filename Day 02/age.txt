@@ -1,0 +1,29 @@
+@echo off
+:: Get the current year from the date command
+echo Current year is: %date:~-4%
+
+:: Ask for the user's birth year
+set /p birthyear="Enter your birth year: "
+
+:: Extract the last 4 digits of the current date (current year)
+set currentyear=%date:~-4%
+
+:: Calculate the age
+set /a age=%currentyear% - %birthyear%
+
+:: Display the result
+echo Your age is: %age%
+
+:: display only the year
+echo year:%date:~ 10,4%
+
+:: display only the month
+echo month:%date:~-10,2%
+
+:: display only the date
+echo date:%date:~-7,2%
+
+:: display only the day
+echo day:%date:~-14,3%
+
+pause
