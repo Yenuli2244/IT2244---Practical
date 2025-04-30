@@ -1,11 +1,15 @@
 mkdir Criteria_1
+:: make directory 'Criteria_01'
 cd Criteria_1
+:: change directory to 'Criteria_01'
 mkdir Standard_1
+:: make directory 'Standard_01' inside the 'Criteria_01'
 mkdir Standard_2
 mkdir Standard_3
 mkdir standard_4
 mkdir standard_5
 cd..
+:: redirect to the previous directory
 mkdir Criteria_2
 cd Criteria_2
 mkdir Standard_1
