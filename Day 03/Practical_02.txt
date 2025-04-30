@@ -1,0 +1,181 @@
+touch - Creates a file 'abc.tsv'.
+[yenuli@DESKTOP-756Q0GF ~]$ touch practical.tsv
+
+vi - Open the file "abc.tsv" using the "vi" text editor.
+[yenuli@DESKTOP-756Q0GF ~]$ vi practical.tsv
+
+ls - a - Lists all files including hidden files, in the current directory.
+[yenuli@DESKTOP-756Q0GF ~]$ ls -a
+ .               .bash_profile   Username.sh   cal1.sh         name.txt     patterns.sh     test3.csv
+ ..              .bashrc        '\'            calculator.sh   new.csv      practical.tsv   xyz.csv
+ .bash_history   Names.txt       abc.txt       datafile.csv    new.txt      student.sh
+ .bash_logout    Q1.sh           astro.sh      days.sh         numbers.sh   test.csv
+
+//Extracts the tab seperated first column.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d$'\t' -f1 practical.tsv
+aa
+bb
+cc
+dd
+ee
+ff
+gg
+hh
+
+// Extracts the third column using space as a delimiter.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d " " -f3 pactical.tsv
+aa      1       2       3
+bb      2       3       4
+cc      3       4       5
+dd      4       5       6
+ee      5       6       7
+ff      6       7       8
+gg      7       8       9
+hh      8       9       10
+
+// Extracts the third column using tab as a delimiter.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d$'\t' -f3 practical.tsv
+2
+3
+4
+5
+6
+7
+8
+9
+
+//Displays the first 2 lines of abc.tsv.
+[yenuli@DESKTOP-756Q0GF ~]$ head -n2 practical.tsv
+aa      1       2       3
+bb      2       3       4
+
+//Displays the last 2 lines of abc.tsv.
+[yenuli@DESKTOP-756Q0GF ~]$ tail -n2 yen.tsv
+gg      7       8       9
+hh      8       9       10
+
+// Edit the abc.tsv file, remove tabs and add spaces between values.
+[yenuli@DESKTOP-756Q0GF ~]$ vi yen.tsv
+
+// Again Extracts the tab seperated first column.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d\t -f1 practical.tsv
+aa 1 2 3
+bb 2 3 4
+cc 3 4 5
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
+gg 7 8 9
+hh 8 9 10
+
+//Again Extracts the space seperated first column.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d' ' -f1 practical.tsv
+aa
+bb
+cc
+dd
+ee
+ff
+gg
+hh
+
+// Extracts the space seperated second column.
+[yenuli@DESKTOP-756Q0GF ~]$ cut -d' ' -f3 practical.tsv
+2
+3
+4
+5
+6
+7
+8
+9
+
+// Display first 10 lines.
+[yenuli@DESKTOP-756Q0GF ~]$ head practical.tsv
+aa 1 2 3
+bb 2 3 4
+cc 3 4 5
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
+gg 7 8 9
+hh 8 9 10
+
+// Display first 8 lines (from head).
+[yenuli@DESKTOP-756Q0GF ~]$ head -5 practical.tsv
+aa 1 2 3
+bb 2 3 4
+cc 3 4 5
+dd 4 5 6
+ee 5 6 7
+
+// Display last 5 lines (from head).
+[yenuli@DESKTOP-756Q0GF ~]$ tail -5 practical.tsv
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
+gg 7 8 9
+hh 8 9 10
+
+// Display first line.
+[yenuli@DESKTOP-756Q0GF ~]$ head -1 practical.tsv
+aa 1 2 3
+
+// Display last line.
+[yenuli@DESKTOP-756Q0GF ~]$ tail -1 practical.tsv
+hh 8 9 10
+
+// Display first 100 lines (from head).
+[yenuli@DESKTOP-756Q0GF ~]$ head -100 practical.tsv
+aa 1 2 3
+bb 2 3 4
+cc 3 4 5
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
+gg 7 8 9
+hh 8 9 10
+
+// Extracts the 8th line.
+[yenuli@DESKTOP-756Q0GF ~]$ head -n8 practical.tsv | tail -n1
+hh 8 9 10
+
+// Prints the entire file using awk.
+[yenuli@DESKTOP-756Q0GF ~]$ awk '{print'} practical.tsv
+aa 1 2 3
+bb 2 3 4
+cc 3 4 5
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
+gg 7 8 9
+hh 8 9 10
+
+// Prints the number of columns (seperated by space).
+[yenuli@DESKTOP-756Q0GF ~]$ awk '{print NF; exit'} practical.tsv
+4
+
+// Prints the 3rd column using awk.
+[yenuli@DESKTOP-756Q0GF ~]$ awk '{print $3'} practical.tsv
+2
+3
+4
+5
+6
+7
+8
+9
+
+wc -l - Count the number of lines.
+[yenuli@DESKTOP-756Q0GF ~]$ wc -l practical.tsv
+8 practical.tsv
+
+// Extracts the first 10 lines and Search for "dd" in those first 10 lines.
+[yenuli@DESKTOP-756Q0GF ~]$ head -n5 practical.tsv | grep 'dd'
+dd 4 5 6
+
+// Extracts the first 7 lines and Search for "56" in those first 10 lines.
+[yenuli@DESKTOP-756Q0GF ~]$ head -n7 practical.tsv | grep '6'
+dd 4 5 6
+ee 5 6 7
+ff 6 7 8
