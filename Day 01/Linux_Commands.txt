@@ -14,7 +14,7 @@ vi - Open a file
 
 more - give the data inside the file.
 
-[yeheni@DESKTOP-CF9TBQU ~]$ more cake.txt
+[yenuli@DESKTOP-756Q0GF ~]$ more Names.txt
 Yenuli
 Kaveesha
 Saduni
