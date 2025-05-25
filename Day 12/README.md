@@ -8,20 +8,20 @@ This project contains beginner-level C programs that demonstrate the fundamental
 - **Concepts:** ```#include```, ```main()```, ```printf()```
 ```printf("Hello World!\n");```
 
-### ✅ 2. Variables --> second.c
+### ✅ 2. Variables 
 - **Purpose:** Demonstrates variable declaration, assignment, and initialization.
 
 <pre>int age;      // Declaration
 age = 25;     // Assignment
 int age = 25; // Declaration + Initialization</pre>
 
-### ✅ 3. Printing Variable Value
+### ✅ 3. Printing Variable Value --> second.c
 - **Purpose:** Prints the value of a variable using ```printf```.
 
 <pre>int age = 25;
 printf("%d\n", age);</pre>
 
-### ✅ 4. Copy Values Between Variables
+### ✅ 4. Copy Values Between Variables --> third.c
 - **Purpose:** Assigns value from one variable to another and prints both.
 
 <pre>int firstNumber = 25;
