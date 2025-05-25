@@ -49,3 +49,36 @@ attrib +h Exam</pre>
 ![Question01_03](https://github.com/user-attachments/assets/0ee8c989-3154-4c89-aa74-4e88a819f0cb)
 ![Question01_04](https://github.com/user-attachments/assets/ce254cee-0c8a-4539-8969-9c3c2452f14a)
 ![Question01_05](https://github.com/user-attachments/assets/f542a021-d504-4c08-8a8e-7618d1262a29)
+
+## 🟨 Question 02 – Bash: GPA Filtering from CSV
+
+### ✅ Task 1: Filter students with GPA > 3.5
+```awk -F',' 'NR==1 || $4 > 3.5' data.csv```
+
+### ✅ Task 2: Calculate average GPA
+```awk -F',' 'NR>1 {sum += $4; count++} END {print "Average GPA:", sum/count}' data.csv```
+
+![Question02](https://github.com/user-attachments/assets/c4165f49-e233-4c65-be7d-29f75f8aa1ea)
+
+## 🟩 Question 03 – Bash: Compare String Lengths
+### ✅ Script: compare_strings.sh
+Reads two strings from the user and prints the longer one.
+
+<pre>echo "Enter String_1"
+read str1
+
+echo "Enter String_2"
+read str2
+
+len1=${#str1}
+len2=${#str2}
+
+if [ $len1 -gt $len2 ]; then
+    echo "$str1 is larger than $str2"
+elif [ $len2 -gt $len1 ]; then
+    echo "$str2 is larger than $str1"
+else
+    echo "$str1 and $str2 are of equal length"
+fi</pre>
+
+![Question03](https://github.com/user-attachments/assets/1f6a3274-4a1c-495f-ad6c-f30ad61c7f22)
