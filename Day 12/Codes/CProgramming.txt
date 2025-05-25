@@ -1,0 +1,105 @@
+//Print 'Hello world!'
+#include<stdio.h> 
+int main(){
+	printf("Hello World!\n");
+	
+return 0;
+}
+
+// variables
+//int age;   This line **declares** a variable named `age` of type integer (int).
+                //At this point, it does not have a value (it's uninitialized).
+
+//age = 25;  This line **assigns** the value 25 to the variable `age`.
+                //Now `age` holds the integer value 25.
+
+//int age = 25;  This line **declares** a new integer variable `age` and **initializes** it to 25 in one step.
+                //This is a shorthand for the two lines above.
+
+
+#include<stdio.h>
+int main(){
+	int age=25;
+	printf("%d/n",age);
+	return 0;
+}
+
+//Declare, assign, and copy values between variables
+#include<stdio.h>
+int main(){
+	int firstNumber=25;
+	printf("first number:%d\n",firstNumber);
+	
+	int secondNumber=firstNumber;
+	printf("second number:%d\n",secondNumber);
+	
+	return 0;
+	
+}
+
+//Data types
+#include<stdio.h>
+int main(){
+        int age=10;
+        printf("%d\n",age);
+        printf("size: %zu\n", sizeof(age));
+
+        double number=12.45;
+        printf("%lf\n",number);
+        printf("%.2lf\n",number);
+
+        float number1=10.9f;
+        printf("%f\n",number1);
+        printf("%.1f\n",number1);
+
+        char letter='D';
+        printf("%c\n",letter);
+        printf("\n%d\n",letter);
+
+return 0;
+}
+
+
+//user input
+#include<stdio.h>
+int main(){
+int age;
+	printf("Enter your age: ");
+	scanf("%d", &age);
+	
+	printf("Age = %d\n",age);
+	
+	double height;
+	printf("Enter your height: ");
+	scanf("%lf", &height);
+	printf("Height = %.2lf\n", height);
+	
+	double number;
+	char alpha;
+	printf("Enter inputs: ");
+	scanf("%lf %c", &number,&alpha);
+	printf("Number = %lf\n", number);
+	printf("Character = %c\n", alpha);
+	
+return 0;
+
+}
+
+//Calculator
+#include<stdio.h>
+
+int main(){
+	int a;
+	printf("Enter a: ");
+	scanf("%d", &a);
+	int b;
+	printf("Enter b: ");
+	scanf("%d", &b);
+	printf("Sum: %d\n", (a+b));
+	printf("Sub: %d\n", (a-b));
+	printf("Mul: %d\n", (a*b));
+	printf("Div: %d\n", (a/b));
+	printf("Remainder: %d\n", (a%b));
+	
+return 0;
+}
