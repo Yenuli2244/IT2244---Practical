@@ -13,7 +13,7 @@ Perform the following operations using Command Prompt:
 5. Copy `Marks` into `Exam`, then hide the `Exam` folder.
 
 ### ✅ Commands:
-```cmd
+<pre>cmd
 cd %USERPROFILE%\Desktop
 mkdir CSC2244 Marks Exam
 
@@ -42,7 +42,7 @@ move "Icae Marks.xlsx" Marks
 move "Final Exam Marks.xlsx" Marks
 
 xcopy /E /I Marks Exam\Marks
-attrib +h Exam```
+attrib +h Exam</pre>
 
 ![Question01_01](https://github.com/user-attachments/assets/e5da22e4-287e-4635-8c8e-b31250859928)
 ![Question01_02](https://github.com/user-attachments/assets/8f4d660d-1385-4da7-9641-f75204bc696d)
