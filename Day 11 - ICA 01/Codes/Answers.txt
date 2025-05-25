@@ -68,3 +68,4 @@ elif [ $len2 -gt $len1 ]; then
     echo "$str2 is larger than $str1"
 else
     echo "$str1 and $str2 are of equal length"
+fi
