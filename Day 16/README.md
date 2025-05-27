@@ -1,4 +1,4 @@
-# 🌱 Multi-Process Computation Program in C
+# 💻 Multi-Process Computation Program in C
 
 ## 🖇️ Description
 
