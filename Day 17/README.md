@@ -2,7 +2,7 @@
 This project contains multiple C programs demonstrating process creation and management using fork(), sleep(), exit(), and wait() system calls in Linux.
 
 ## 📂 File Descriptions
-```firstpro.c```
+<pre>firstpro.c</pre>
 **Description:** A simple program that demonstrates a sleep() delay.
 ![1](https://github.com/user-attachments/assets/60eb4835-c7b9-446b-9903-cc7d3d30b4b1)
 
