@@ -1,3 +1,4 @@
+# 📆 2025.05.16
 # 📝 C Programming Basics
 ## 📚 Overview
 This project contains beginner-level C programs that demonstrate the fundamentals of C programming, including printing, variables, data types, user input, and building a simple calculator.
