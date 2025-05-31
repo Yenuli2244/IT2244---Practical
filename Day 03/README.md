@@ -1,3 +1,4 @@
+# 📆 2025.03.21
 01).Write a Windows batch script that:
        Displays the current system date and extracts the year, month, date, and day name using string manipulation.
        Calculates the day of the year using an approximation (assuming each month has 30 days).
