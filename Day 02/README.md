@@ -1,4 +1,4 @@
-# 📆 2025.05.18
+# 📆 2025.03.18
 01)Write a Windows batch script that:
        Extracts the current year from the system date.
        Prompts the user to enter their birth year.
