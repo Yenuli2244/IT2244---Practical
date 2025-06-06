@@ -20,7 +20,7 @@ This project demonstrates inter-process communication using two different method
 
 ### 2. Memory Mapping with ```mmap```
 **File**
-```sharedEx.c```
+- ```sharedEx.c```
 
 **How It Works**
 - A shared anonymous memory region is created using ```mmap```.
